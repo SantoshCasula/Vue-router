@@ -14,6 +14,7 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex';
     export default {
         methods: {
             unregister(registration) {
@@ -24,14 +25,11 @@
                 this.$store.state.registrations.splice(this.$store.state.registrations.indexOf(registration), 1);
             }
         },
-        computed: {
-            total() {
-                return this.$store.state.registrations.length;
-            },
-            registrations(){
-                return this.$store.state.registrations;
-            }
-        }
+        computed:
+            mapGetters({
+                registrations:'registrations',
+                total:'totalRegistrations'
+                       })
     }
 </script>
 
