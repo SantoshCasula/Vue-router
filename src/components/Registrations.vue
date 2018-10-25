@@ -29,7 +29,7 @@
             mapGetters({
                 registrations:'registrations',
                 total:'totalRegistrations'
-                       })
+            })
     }
 </script>
 
