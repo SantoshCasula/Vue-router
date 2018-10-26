@@ -65,11 +65,5 @@
     .row span:hover {
         color: darkred;
     }
-
-    .date {
-        display: inline-block;
-        width: 38%;
-        text-align: right;
-        box-sizing: border-box;
-    }
+    
 </style>
