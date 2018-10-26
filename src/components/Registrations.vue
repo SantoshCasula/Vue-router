@@ -25,11 +25,12 @@
                 this.$store.state.registrations.splice(this.$store.state.registrations.indexOf(registration), 1);
             }
         },
-        computed:
-            mapGetters({
-                registrations:'registrations',
-                total:'totalRegistrations'
+        computed: {
+            ...mapGetters({
+                registrations: 'registrations',
+                total: 'totalRegistrations'
             })
+        }
     }
 </script>
 
